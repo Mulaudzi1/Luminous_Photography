@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Work | Luminous_Photography</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #000;
+  color: #e3d28f;
+  line-height: 1.8;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 18px 50px;
+  background: #000;
+  border-bottom: 1px solid rgba(227, 210, 143, 0.4);
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #e3d28f;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+nav a {
+  color: #e3d28f;
+  text-decoration: none;
+  margin: 0 18px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+  white-space: nowrap;
+}
+
+nav a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #e3d28f;
+  transition: width 0.3s;
+  margin-top: 4px;
+}
+
+nav a:hover::after,
+nav a.active::after {
+  width: 100%;
+}
+
+.book-now {
+  padding: 10px 22px;
+  border: 1px solid #e3d28f;
+  border-radius: 30px;
+  font-weight: 500;
+  transition: all 0.3s;
+  flex-shrink: 0;
+}
+
+.book-now:hover {
+  background: #e3d28f;
+  color: #000;
+  transform: translateY(-2px);
+}
+
+/* PAGE TITLE */
+.page-title {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 46px;
+  margin: 60px auto 40px;
+  color: #e3d28f;
+  letter-spacing: 2px;
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 0 20px 100px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #333;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 15px rgba(227, 210, 143, 0.1);
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(227, 210, 143, 0.4);
+  border-color: #e3d28f;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  border-top: 1px solid #333;
+  font-size: 14px;
+  color: #e3d28f;
+}
+/* Add gold frame effect to all gallery images */
+/* Elegant thin gold frame */
+.carousel-container img,
+.gallery img {
+  border: 2px solid #e3d28f; /* thinner gold border */
+  border-radius: 10px;
+  padding: 2px; /* small gap for subtle frame */
+  background: #000; /* keeps contrast behind the image */
+  box-shadow: 0 0 8px rgba(227, 210, 143, 0.15);
+  transition: all 0.4s ease;
+}
+
+.carousel-container img:hover,
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(227, 210, 143, 0.5);
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 12px 20px;
+  }
+
+  nav {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  nav a {
+    margin: 6px 10px;
+  }
+
+  .book-now {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .page-title {
+    font-size: 36px;
+  }
+
+  .gallery img {
+    height: 250px;
+  }
+}
+</style>
+</head>
+
+<body>
+  <header class="header">
+     <h1 class="logo">
+  <img src="https://tse1.mm.bing.net/th/id/OIP.Hd2ZVEOPO4Y166NnanV5dwHaHa?cb=ucfimg2ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Luminous Logo">
+  Luminous_Photography
+</h1>
+
+<style>
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between the logo and text */
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #e3d28f; /* gold color restored */
+}
+
+.logo img {
+  width: 120px;  /* adjust size as needed */
+  height: 40px;
+  border-radius: 50%; /* makes it circular */
+  object-fit: cover;
+}
+</style>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="team.html">Meet the Team</a>
+      <a href="work.html" class="active">Our Work</a>
+      <a href="contact.html">Contact</a>
+      <a class="book-now" href="https://wa.me/+27671082211" target="_blank">Book Now</a>
+    </nav>
+  </header>
+
+  <h1 class="page-title">Our Work</h1>
+
+<style>
+/* Common styles for all carousels */
+.carousel-container {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  gap: 20px;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+.carousel-container img {
+  flex: 0 0 auto;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.carousel-container img:hover {
+  transform: scale(1.05);
+}
+
+/* Arrow buttons */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(227, 210, 143, 0.8);
+  border: none;
+  padding: 20px;          /* increased from 10px to 20px */
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 30px;        /* increased font size */
+  font-weight: bold;
+}
+
+.carousel-arrow:hover {
+  background: #e3d28f;
+}
+
+.carousel-left {
+  left: 5px;
+}
+
+.carousel-right {
+  right: 5px;
+}
+</style>
+
+<!-- Example: Graduation Carousel -->
+<section class="graduation-gallery" style="background: #111; padding: 40px 20px; color: #e3d28f; position: relative;">
+  <h2 style="font-family: 'Playfair Display', serif; font-size: 36px; margin-bottom: 20px; text-align: center;">Graduation Highlights</h2>
+  <p style="font-size: 18px; max-width: 800px; margin: 0 auto 40px; text-align: center;">
+    Celebrating proud moments from our graduation events and student achievements.
+  </p>
+
+  <button class="carousel-arrow carousel-left" onclick="scrollLeft('grad-carousel')">&#10094;</button>
+  <div id="grad-carousel" class="carousel-container">
+    <img src="https://assets.nicepagecdn.com/c1e55286/6584958/images/IMG-20251104-WA0103.jpg" alt="Graduation 1">
+    <img src="https://assets.nicepagecdn.com/c1e55286/6584958/images/IMG-20251104-WA0109.jpg" alt="Graduation 2">
+    <img src="https://assets.nicepagecdn.com/c1e55286/6584958/images/IMG-20251104-WA0113.jpg" alt="Graduation 3">
+    <img src="https://assets.nicepagecdn.com/c1e55286/6584958/images/IMG-20251104-WA0114.jpg" alt="Graduation 4">
+    <img src="https://assets.nicepagecdn.com/c1e55286/6584958/images/WhatsAppImage2025-03-09at22.05.07_bde3467b.jpg" alt="Graduation 5">
+    <img src="https://assets.nicepagecdn.com/c1e55286/6584958/images/IMG-20251104-WA0111.jpg" alt="Graduation 6">
+    <img src="https://assets.nicepagecdn.com/c1e55286/6584958/images/IMG-20251104-WA0107.jpg" alt="Graduation 7">
+  </div>
+  <button class="carousel-arrow carousel-right" onclick="scrollRight('grad-carousel')">&#10095;</button>
+</section>
+
+<!-- Repeat same structure for Matric Dance and Events -->
+<section class="matric-dance" style="background: #000; padding: 60px 20px; color: #e3d28f; position: relative;">
+  <h2 style="font-family: 'Playfair Display', serif; font-size: 36px; margin-bottom: 20px; text-align: center;">Matric Dance Highlights</h2>
+  <p style="font-size: 18px; max-width: 800px; margin: 0 auto 40px; text-align: center;">
+    Celebrating unforgettable moments and memories from our latest matric dance events.
+  </p>
+
+  <button class="carousel-arrow carousel-left" onclick="scrollLeft('matric-carousel')">&#10094;</button>
+  <div id="matric-carousel" class="carousel-container">
+    <img src="https://assets.nicepagecdn.com/c1e55286/6584958/images/IMG-20251104-WA0271.jpg" alt="Matric Dance 4">
+    <img src="https://assets.nicepagecdn.com/c1e55286/6584958/images/IMG-20251104-WA0270.jpg" alt="Matric Dance 5">
+    <img src="https://assets.nicepagecdn.com/c1e55286/6584958/images/IMG-20251104-WA0273.jpg" alt="Matric Dance 1">
+    <img src="https://assets.nicepagecdn.com/c1e55286/6584958/images/IMG-20251104-WA0268.jpg" alt="Matric Dance 2">
+    <img src="https://assets.nicepagecdn.com/c1e55286/6584958/images/IMG-20251104-WA0272.jpg" alt="Matric Dance 3">
+  </div>
+  <button class="carousel-arrow carousel-right" onclick="scrollRight('matric-carousel')">&#10095;</button>
+</section>
+
+<section class="events-gallery" style="background: #111; padding: 40px 20px; color: #e3d28f; position: relative;">
+  <h2 style="font-family: 'Playfair Display', serif; font-size: 36px; margin-bottom: 20px; text-align: center;">Event Highlights</h2>
+  <p style="font-size: 18px; max-width: 800px; margin: 0 auto 40px; text-align: center;">
+    Capturing memorable moments from our recent events and gatherings.
+  </p>
+
+  <button class="carousel-arrow carousel-left" onclick="scrollLeft('events-carousel')">&#10094;</button>
+  <div id="events-carousel" class="carousel-container">
+    <img src="https://assets.nicepagecdn.com/c1e55286/6584958/images/IMG-20251104-WA0094.jpg" alt="Event 1">
+    <img src="https://assets.nicepagecdn.com/c1e55286/6584958/images/IMG-20250227-WA0019.jpg" alt="Event 2">
+    <img src="https://assets.nicepagecdn.com/c1e55286/6584958/images/IMG-20251104-WA0096.jpg" alt="Event 3">
+    <img src="https://assets.nicepagecdn.com/c1e55286/6584958/images/IMG-20250227-WA0023.jpg" alt="Event 4">
+    <img src="https://assets.nicepagecdn.com/c1e55286/6584958/images/IMG-20250227-WA0026.jpg" alt="Event 5">
+    <img src="https://assets.nicepagecdn.com/c1e55286/6584958/images/IMG-20251104-WA0101.jpg" alt="Event 6">
+  </div>
+  <button class="carousel-arrow carousel-right" onclick="scrollRight('events-carousel')">&#10095;</button>
+</section>
+
+<script>
+function scrollLeft(id) {
+  const container = document.getElementById(id);
+  container.scrollBy({ left: -320, behavior: 'smooth' });
+}
+
+function scrollRight(id) {
+  const container = document.getElementById(id);
+  container.scrollBy({ left: 320, behavior: 'smooth' });
+}
+</script>
+
+
+
+  <footer>
+    <p>© 2025 Luminous_Photography. All Rights Reserved. Designed by Jedicore Technologies.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Amoria Cuisine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    /* GLOBAL STYLING */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #000;
+      color: #e3d28f;
+      line-height: 1.8;
+    }
+
+    h1, h2, h3, p {
+      margin-top: 0;
+    }
+
+    /* HEADER */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 50px;
+      background: #000;
+      border-bottom: 1px solid #444;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      flex-wrap: wrap; /* allow wrapping for small screens */
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: #e3d28f;
+      letter-spacing: 1px;
+      margin: 0;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap; /* wrap menu items if needed */
+      gap: 12px;
+    }
+
+    nav a {
+      color: #e3d28f;
+      text-decoration: none;
+      margin: 4px 8px;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #e3d28f;
+      transition: width 0.3s;
+      margin-top: 4px;
+    }
+
+    nav a:hover::after,
+    nav a.active::after {
+      width: 100%;
+    }
+
+    .book-now {
+      padding: 10px 22px;
+      border: 1px solid #e3d28f;
+      border-radius: 30px;
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+
+    .book-now:hover {
+      background: #e3d28f;
+      color: #000;
+      transform: translateY(-2px);
+    }
+
+    /* HERO SECTION */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 280px;
+      background: linear-gradient(180deg, #111, #222);
+      padding: 0 20px;
+    }
+
+    .hero p {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 400;
+      max-width: 800px;
+      opacity: 0.9;
+    }
+
+    /* STORY SECTION */
+    .story-section {
+      max-width: 900px;
+      margin: 80px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .story-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 46px;
+      font-weight: 700;
+      margin-bottom: 30px;
+      letter-spacing: 2px;
+      color: #e3d28f;
+    }
+
+    .story-text {
+      font-size: 18px;
+      line-height: 1.8;
+      text-align: justify;
+      color: #fff;
+      opacity: 0.95;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      border-top: 1px solid #333;
+      font-size: 14px;
+      color: #e3d28f;
+    }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 12px 20px;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      .hero {
+        height: auto;
+        padding: 60px 20px;
+      }
+
+      .hero p {
+        font-size: 20px;
+      }
+
+      .story-title {
+        font-size: 36px;
+      }
+
+      .story-text {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="logo">Amoria Cuisine</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="services.html">Services</a>
+      <a href="team.html">Meet the Team</a>
+      <a href="work.html">Our Work</a>
+      <a href="contact.html">Contact</a>
+      <a class="book-now" href="https://wa.me/27727345292" target="_blank">Book Now</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <p>Crafting luxury cuisine with purpose, excellence & heart.</p>
+  </section>
+
+  <section class="story-section">
+    <h1 class="story-title">Our Story</h1>
+    <p class="story-text">
+      Amoria Cuisine was founded by Chef Rangani Mike Lithole, a professionally trained chef with a deep passion for fine dining and exceptional service. His culinary journey began at the International Hotel School (IHS), where he earned a Bachelor of Arts in Culinary Arts. The company was built on a love for luxury cuisine, a commitment to service excellence, and a vision to create opportunities for rising culinary talent.<br><br>
+
+      At Amoria Cuisine, faith is at the core of every plate we serve. Every dish is crafted with intention, skill, and care — feeding not only the appetite, but purpose. Over the years, Chef Lithole has partnered with private clients, event planners, and brands across Johannesburg and beyond, creating bespoke menus that elevate each experience.<br><br>
+
+      We believe food is more than ingredients and technique — it is hospitality expressed. We cook to bring people together, to celebrate moments, and to bless those we serve. By working closely with local suppliers, we ensure our menus are seasonal, sustainable, and thoughtfully curated. Whether you're planning an intimate dinner, a large-scale event, or seeking creative food styling, Amoria Cuisine approaches every brief with grace, purpose, and meticulous detail.
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Amoria Cuisine. All Rights Reserved. Designed by Jedicore Technologies</p>
+  </footer>
+</body>
+</html>
